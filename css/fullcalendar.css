@@ -82,4 +82,31 @@ body .fc { /* extra precedence to overcome jqui */
 }
 
 .fc-bgevent { /* default look for background events */
-	background: rgb(143, 223
+	background: rgb(143, 223, 130);
+	opacity: .3;
+}
+
+.fc-nonbusiness { /* default look for non-business-hours areas */
+	/* will inherit .fc-bgevent's styles */
+	background: #d7d7d7;
+}
+
+.fc-unthemed .fc-disabled-day {
+	background: #d7d7d7;
+	opacity: .3;
+}
+
+.ui-widget .fc-disabled-day { /* themed */
+	background-image: none;
+}
+
+
+/* Icons (inline elements with styled text that mock arrow icons)
+--------------------------------------------------------------------------------------------------*/
+
+.fc-icon {
+	display: inline-block;
+	height: 1em;
+	line-height: 1em;
+	font-size: 1em;
+	text-align: center
