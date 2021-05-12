@@ -183,3 +183,23 @@ NOTE: use percentage font sizes or else old IE chokes
 	font-size: 200%;
 	top: 6%;
 }
+
+
+/* Buttons (styled <button> tags, normalized to work cross-browser)
+--------------------------------------------------------------------------------------------------*/
+
+/* CONTENT 1 GOES HERE */
+
+/* Buttons Groups
+--------------------------------------------------------------------------------------------------*/
+
+.fc-button-group {
+	display: inline-block;
+}
+
+/*
+every button that is not first in a button group should scootch over one pixel and cover the
+previous button's border...
+*/
+
+.fc .fc-button-group > * { /* extra precedence b/c button
