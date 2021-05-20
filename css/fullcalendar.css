@@ -380,3 +380,32 @@ a[data-goto]:hover {
 }
 
 /* highlighting cells & background event skeleton */
+
+.fc-row .fc-bgevent-skeleton,
+.fc-row .fc-highlight-skeleton {
+	bottom: 0; /* stretch skeleton to bottom of row */
+}
+
+.fc-row .fc-bgevent-skeleton table,
+.fc-row .fc-highlight-skeleton table {
+	height: 100%; /* stretch skeleton to bottom of row */
+}
+
+.fc-row .fc-highlight-skeleton td,
+.fc-row .fc-bgevent-skeleton td {
+	border-color: transparent;
+}
+
+.fc-row .fc-bgevent-skeleton {
+	z-index: 2;
+
+}
+
+.fc-row .fc-highlight-skeleton {
+	z-index: 3;
+}
+
+/*
+row content (which contains day/week numbers and events) as well as "helper" (which contains
+temporary rendered events).
+*/
