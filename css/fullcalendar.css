@@ -456,4 +456,28 @@ temporary rendered events).
 --------------------------------------------------------------------------------------------------*/
 
 .fc-event {
-	position
+	position: relative; /* for resize handle and other inner positioning */
+	display: block; /* make the <a> tag block */
+	font-size: .85em;
+	line-height: 1.3;
+	border: 1px solid #8a4680; /* default BORDER color */
+	font-weight: normal; /* undo jqui's ui-widget-header bold */
+	
+}
+
+.fc-event,
+.fc-event-dot {
+	background-color: #8a4680; /* default BACKGROUND color */
+}
+
+/* overpower some of bootstrap's and jqui's styles on <a> tags */
+.fc-event,
+.fc-event:hover,
+.ui-widget .fc-event {
+	color: #fff; /* default TEXT color */
+	text-decoration: none; /* if <a> has an href */
+}
+
+.fc-event[href],
+.fc-event.fc-draggable {
+	cursor:
