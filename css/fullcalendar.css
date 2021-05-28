@@ -480,4 +480,33 @@ temporary rendered events).
 
 .fc-event[href],
 .fc-event.fc-draggable {
-	cursor:
+	cursor: pointer; /* give events with links and draggable events a hand mouse pointer */
+}
+
+.fc-not-allowed, /* causes a "warning" cursor. applied on body */
+.fc-not-allowed .fc-event { /* to override an event's custom cursor */
+	cursor: not-allowed;
+}
+
+.fc-event .fc-bg { /* the generic .fc-bg already does position */
+	z-index: 1;
+	background: #fff;
+	opacity: .25;
+}
+
+.fc-event .fc-content {
+	position: relative;
+	z-index: 2;
+}
+
+/* resizer (cursor AND touch devices) */
+
+.fc-event .fc-resizer {
+	position: absolute;
+	z-index: 4;
+}
+
+/* resizer (touch devices) */
+
+.fc-event .fc-resizer {
+	display: no
