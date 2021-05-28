@@ -535,4 +535,30 @@ temporary rendered events).
 
 
 /* Event Selection (only for touch devices)
--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------*/
+
+.fc-event.fc-selected {
+	z-index: 9999 !important; /* overcomes inline z-index */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fc-event.fc-selected.fc-dragging {
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Horizontal Events
+--------------------------------------------------------------------------------------------------*/
+
+/* bigger touch area when selected */
+.fc-h-event.fc-selected:before {
+	content: "";
+	position: absolute;
+	z-index: 3; /* below resizers */
+	top: -10px;
+	bottom: -10px;
+	left: 0;
+	right: 0;
+}
+
+/* events that are continuing to/from another week. kill round
