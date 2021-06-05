@@ -802,4 +802,32 @@ a.fc-more:hover {
 }
 
 .fc-toolbar .fc-state-hover,
-.fc-toolbar .ui-s
+.fc-toolbar .ui-state-hover {
+	z-index: 2;
+}
+
+.fc-state-hover {
+	background-color: #000;
+}
+	
+.fc-toolbar .fc-state-down {
+	z-index: 3;
+}
+
+.fc-toolbar .fc-state-active,
+.fc-toolbar .ui-state-active {
+	z-index: 4;
+}
+
+.fc-toolbar button:focus {
+	z-index: 5;
+}
+
+
+/* View Structure
+--------------------------------------------------------------------------------------------------*/
+
+/* undo twitter bootstrap's box-sizing rules. normalizes positioning techniques */
+/* don't do this for the toolbar because we'll want bootstrap to style those buttons as some pt */
+.fc-view-container *,
+.fc-vi
