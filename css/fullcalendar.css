@@ -852,4 +852,33 @@ a.fc-more:hover {
 
 .fc-basicWeek-view .fc-content-skeleton,
 .fc-basicDay-view .fc-content-skeleton {
-	/* there m
+	/* there may be week numbers in these views, so no padding-top */
+	padding-bottom: 1em; /* ensure a space at bottom of cell for user selecting/clicking */
+}
+
+.fc-basic-view .fc-body .fc-row {
+	min-height: 4em; /* ensure that all rows are at least this tall */
+
+}
+
+/* a "rigid" row will take up a constant amount of height because content-skeleton is absolute */
+
+.fc-row.fc-rigid {
+	overflow: hidden;
+}
+
+.fc-row.fc-rigid .fc-content-skeleton {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+/* week and day number styling */
+
+.fc-day-top.fc-other-month {
+	opacity: 0.3;
+}
+
+.fc-basic-view .fc-week-number,
+.fc-basic-vi
