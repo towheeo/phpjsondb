@@ -968,4 +968,30 @@ a.fc-more:hover {
 	min-height: 100%; /* so if height setting is 'auto', .fc-bg stretches to fill height */
 }
 
-.fc-time-grid table { /* don't put outer 
+.fc-time-grid table { /* don't put outer borders on slats/bg/content/etc */
+	border: 0 hidden transparent;
+}
+
+.fc-time-grid > .fc-bg {
+	z-index: 1;
+}
+
+.fc-time-grid .fc-slats,
+.fc-time-grid > hr { /* the <hr> AgendaView injects when grid is shorter than scroller */
+	position: relative;
+	z-index: 2;
+}
+
+.fc-time-grid .fc-content-col {
+	position: relative; /* because now-indicator lives directly inside */
+}
+
+.fc-time-grid .fc-content-skeleton {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+/* divs within a cell within the fc-content-skeleton *
