@@ -994,4 +994,37 @@ a.fc-more:hover {
 	right: 0;
 }
 
-/* divs within a cell within the fc-content-skeleton *
+/* divs within a cell within the fc-content-skeleton */
+
+.fc-time-grid .fc-business-container {
+	position: relative;
+	z-index: 1;
+}
+
+.fc-time-grid .fc-bgevent-container {
+	position: relative;
+	z-index: 2;
+}
+
+.fc-time-grid .fc-highlight-container {
+	position: relative;
+	z-index: 3;
+}
+
+.fc-time-grid .fc-event-container {
+	position: relative;
+	z-index: 4;
+}
+
+.fc-time-grid .fc-now-indicator-line {
+	z-index: 5;
+}
+
+.fc-time-grid .fc-helper-container { /* also is fc-event-container */
+	position: relative;
+	z-index: 6;
+}
+
+
+/* TimeGrid Slats (lines that run horizontally)
+-------------------------------------------------------------------------
