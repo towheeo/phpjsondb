@@ -1066,4 +1066,30 @@ a.fc-more:hover {
 }
 
 .fc-rtl .fc-time-grid .fc-event-container { /* space on the sides of events for RTL */
-	margin: 0 2px 0 2.5%
+	margin: 0 2px 0 2.5%;
+}
+
+.fc-time-grid .fc-event,
+.fc-time-grid .fc-bgevent {
+	position: absolute;
+	z-index: 1; /* scope inner z-index's */
+}
+
+.fc-time-grid .fc-bgevent {
+	/* background events always span full width */
+	left: 0;
+	right: 0;
+}
+
+
+/* Generic Vertical Event
+--------------------------------------------------------------------------------------------------*/
+
+.fc-v-event.fc-not-start { /* events that are continuing from another day */
+	/* replace space made by the top border with padding */
+	border-top-width: 0;
+	padding-top: 1px;
+
+	/* remove top rounded corners */
+	border-top-left-radius: 0;
+	
