@@ -1027,4 +1027,23 @@ a.fc-more:hover {
 
 
 /* TimeGrid Slats (lines that run horizontally)
--------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------*/
+
+.fc-time-grid .fc-slats td {
+	height: 1.5em;
+	border-bottom: 0; /* each cell is responsible for its top border */
+}
+
+.fc-time-grid .fc-slats .fc-minor td {
+	border-top-style: dotted;
+}
+
+.fc-time-grid .fc-slats .ui-widget-content { /* for jqui theme */
+	background: none; /* see through to fc-bg */
+}
+
+
+/* TimeGrid Highlighting Slots
+--------------------------------------------------------------------------------------------------*/
+
+.fc-time-grid .fc-highlight-container { /* a div within a cell within the fc-highlight-skeleton */
