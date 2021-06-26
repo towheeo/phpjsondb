@@ -1092,4 +1092,25 @@ a.fc-more:hover {
 
 	/* remove top rounded corners */
 	border-top-left-radius: 0;
-	
+	border-top-right-radius: 0;
+}
+
+.fc-v-event.fc-not-end {
+	/* replace space made by the top border with padding */
+	border-bottom-width: 0;
+	padding-bottom: 1px;
+
+	/* remove bottom rounded corners */
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+
+/* TimeGrid Event Styling
+----------------------------------------------------------------------------------------------------
+We use the full "fc-time-grid-event" class instead of using descendants because the event won't
+be a descendant of the grid when it is being dragged.
+*/
+
+.fc-time-grid-event {
+	overflow: hid
