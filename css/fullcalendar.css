@@ -1186,4 +1186,33 @@ be a descendant of the grid when it is being dragged.
 	cursor: s-resize;
 }
 
-.fc-time-grid-event.fc-allow-mouse-resize
+.fc-time-grid-event.fc-allow-mouse-resize .fc-resizer:after {
+	content: "=";
+}
+
+/* resizer (touch device) */
+
+.fc-time-grid-event.fc-selected .fc-resizer {
+	/* 10x10 dot */
+	border-radius: 5px;
+	border-width: 1px;
+	width: 8px;
+	height: 8px;
+	border-style: solid;
+	border-color: inherit;
+	background: #fff;
+	/* horizontally center */
+	left: 50%;
+	margin-left: -5px;
+	/* center on the bottom edge */
+	bottom: -5px;
+}
+
+
+/* Now Indicator
+--------------------------------------------------------------------------------------------------*/
+
+.fc-time-grid .fc-now-indicator-line {
+	border-top-width: 1px;
+	left: 0;
+	right: 
