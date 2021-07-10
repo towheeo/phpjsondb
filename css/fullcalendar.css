@@ -1312,4 +1312,41 @@ be a descendant of the grid when it is being dragged.
 	width: 1px;
 }
 
-/* make the dot closer to the ev
+/* make the dot closer to the event title */
+.fc-ltr .fc-list-item-marker { padding-right: 0; }
+.fc-rtl .fc-list-item-marker { padding-left: 0; }
+
+.fc-list-item-title a {
+	/* every event title cell has an <a> tag */
+	text-decoration: none;
+	color: inherit;
+}
+
+.fc-list-item-title a[href]:hover {
+	/* hover effect only on titles with hrefs */
+	text-decoration: underline;
+}
+
+/* message when no events */
+
+.fc-list-empty-wrap2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.fc-list-empty-wrap1 {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.fc-list-empty {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.fc-unthemed .fc-list-
