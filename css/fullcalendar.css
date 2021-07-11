@@ -1349,4 +1349,6 @@ be a descendant of the grid when it is being dragged.
 	text-align: center;
 }
 
-.fc-unthemed .fc-list-
+.fc-unthemed .fc-list-empty { /* theme will provide own background */
+	background-color: #eee;
+}
