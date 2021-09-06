@@ -112,4 +112,51 @@
 
 	}
 
-	@media screen and (max-width: 1280px) 
+	@media screen and (max-width: 1280px) {
+
+		.container.\31 25\25 {
+			width: 100%;
+			max-width: 81.25rem;
+			min-width: 65rem;
+		}
+
+		.container.\37 5\25 {
+			width: 48.75rem;
+		}
+
+		.container.\35 0\25 {
+			width: 32.5rem;
+		}
+
+		.container.\32 5\25 {
+			width: 16.25rem;
+		}
+
+		.container {
+			width: 65rem;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.container.\31 25\25 {
+			width: 100%;
+			max-width: 112.5%;
+			min-width: 90%;
+		}
+
+		.container.\37 5\25 {
+			width: 67.5%;
+		}
+
+		.container.\35 0\25 {
+			width: 45%;
+		}
+
+		.container.\32 5\25 {
+			width: 22.5%;
+		}
+
+		.container {
+			widt
