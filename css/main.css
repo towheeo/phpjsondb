@@ -244,4 +244,51 @@
 	}
 
 	.row.uniform > * > :last-child {
-		margin-bot
+		margin-bottom: 0;
+	}
+
+	.row.\30 \25 > * {
+		padding: 0 0 0 0rem;
+	}
+
+	.row.\30 \25 {
+		margin: 0 0 -1px 0rem;
+	}
+
+	.row.uniform.\30 \25 > * {
+		padding: 0rem 0 0 0rem;
+	}
+
+	.row.uniform.\30 \25 {
+		margin: 0rem 0 -1px 0rem;
+	}
+
+	.row > * {
+		padding: 0 0 0 2rem;
+	}
+
+	.row {
+		margin: 0 0 -1px -2rem;
+	}
+
+	.row.uniform > * {
+		padding: 2rem 0 0 2rem;
+	}
+
+	.row.uniform {
+		margin: -2rem 0 -1px -2rem;
+	}
+
+	.row.\32 00\25 > * {
+		padding: 0 0 0 4rem;
+	}
+
+	.row.\32 00\25 {
+		margin: 0 0 -1px -4rem;
+	}
+
+	.row.uniform.\32 00\25 > * {
+		padding: 4rem 0 0 4rem;
+	}
+
+	.row
