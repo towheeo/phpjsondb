@@ -624,4 +624,33 @@
 
 		.\31 u\28xlarge\29, .\31 u\24\28xlarge\29 {
 			width: 8.3333333333%;
-			clear: 
+			clear: none;
+			margin-left: 0;
+		}
+
+		.\31 2u\24\28xlarge\29 + *,
+		.\31 1u\24\28xlarge\29 + *,
+		.\31 0u\24\28xlarge\29 + *,
+		.\39 u\24\28xlarge\29 + *,
+		.\38 u\24\28xlarge\29 + *,
+		.\37 u\24\28xlarge\29 + *,
+		.\36 u\24\28xlarge\29 + *,
+		.\35 u\24\28xlarge\29 + *,
+		.\34 u\24\28xlarge\29 + *,
+		.\33 u\24\28xlarge\29 + *,
+		.\32 u\24\28xlarge\29 + *,
+		.\31 u\24\28xlarge\29 + * {
+			clear: left;
+		}
+
+		.\-11u\28xlarge\29 {
+			margin-left: 91.66667%;
+		}
+
+		.\-10u\28xlarge\29 {
+			margin-left: 83.33333%;
+		}
+
+		.\-9u\28xlarge\29 {
+			margin-left: 75%;
+		}
