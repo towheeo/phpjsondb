@@ -700,4 +700,43 @@
 		}
 
 		.row.uniform > * {
-			padding: 1.5re
+			padding: 1.5rem 0 0 1.5rem;
+		}
+
+		.row.uniform {
+			margin: -1.5rem 0 -1px -1.5rem;
+		}
+
+		.row.\32 00\25 > * {
+			padding: 0 0 0 3rem;
+		}
+
+		.row.\32 00\25 {
+			margin: 0 0 -1px -3rem;
+		}
+
+		.row.uniform.\32 00\25 > * {
+			padding: 3rem 0 0 3rem;
+		}
+
+		.row.uniform.\32 00\25 {
+			margin: -3rem 0 -1px -3rem;
+		}
+
+		.row.\31 50\25 > * {
+			padding: 0 0 0 2.25rem;
+		}
+
+		.row.\31 50\25 {
+			margin: 0 0 -1px -2.25rem;
+		}
+
+		.row.uniform.\31 50\25 > * {
+			padding: 2.25rem 0 0 2.25rem;
+		}
+
+		.row.uniform.\31 50\25 {
+			margin: -2.25rem 0 -1px -2.25rem;
+		}
+
+		
