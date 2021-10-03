@@ -739,4 +739,42 @@
 			margin: -2.25rem 0 -1px -2.25rem;
 		}
 
-		
+		.row.\35 0\25 > * {
+			padding: 0 0 0 0.75rem;
+		}
+
+		.row.\35 0\25 {
+			margin: 0 0 -1px -0.75rem;
+		}
+
+		.row.uniform.\35 0\25 > * {
+			padding: 0.75rem 0 0 0.75rem;
+		}
+
+		.row.uniform.\35 0\25 {
+			margin: -0.75rem 0 -1px -0.75rem;
+		}
+
+		.row.\32 5\25 > * {
+			padding: 0 0 0 0.375rem;
+		}
+
+		.row.\32 5\25 {
+			margin: 0 0 -1px -0.375rem;
+		}
+
+		.row.uniform.\32 5\25 > * {
+			padding: 0.375rem 0 0 0.375rem;
+		}
+
+		.row.uniform.\32 5\25 {
+			margin: -0.375rem 0 -1px -0.375rem;
+		}
+
+		.\31 2u\28large\29, .\31 2u\24\28large\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+		}
+
+		.\31 1u\28l
