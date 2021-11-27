@@ -1905,4 +1905,36 @@
 
 		input[type="submit"].icon,
 		input[type="reset"].icon,
-		inpu
+		input[type="button"].icon,
+		button.icon,
+		.button.icon {
+			padding-left: 1.35rem;
+		}
+
+			input[type="submit"].icon:before,
+			input[type="reset"].icon:before,
+			input[type="button"].icon:before,
+			button.icon:before,
+			.button.icon:before {
+				margin-right: 0.5rem;
+			}
+
+		input[type="submit"].fit,
+		input[type="reset"].fit,
+		input[type="button"].fit,
+		button.fit,
+		.button.fit {
+			display: block;
+			margin: 0 0 1rem 0;
+			width: 100%;
+		}
+
+		input[type="submit"].small,
+		input[type="reset"].small,
+		input[type="button"].small,
+		button.small,
+		.button.small {
+			font-size: 0.8rem;
+		}
+
+		input[
