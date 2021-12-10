@@ -2175,4 +2175,32 @@
 				font-family: FontAwesome;
 				font-style: normal;
 				font-weight: normal;
-				text-transform:
+				text-transform: none !important;
+			}
+
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				border-radius: 2px;
+				border: solid 1px;
+				content: '';
+				display: inline-block;
+				height: 1.65rem;
+				left: 0;
+				line-height: 1.58125rem;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 1.65rem;
+			}
+
+		input[type="checkbox"]:checked + label:before,
+		input[type="radio"]:checked + label:before {
+			content: '\f00c';
+		}
+
+	input[type="checkbox"] + label:before {
+		border-radius: 2px;
+	}
+
+	input[type="radio"] + label:before {
+		border-ra
