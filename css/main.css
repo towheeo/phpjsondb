@@ -2555,4 +2555,52 @@
 	}
 
 	header p {
-		p
+		position: relative;
+		margin: 0 0 1.5rem 0;
+	}
+
+	header h2 + p {
+		font-size: 1.25rem;
+		margin-top: -1rem;
+	}
+
+	header h3 + p {
+		font-size: 1.1rem;
+		margin-top: -0.8rem;
+	}
+
+	header h4 + p,
+	header h5 + p,
+	header h6 + p {
+		font-size: 0.9rem;
+		margin-top: -0.6rem;
+	}
+
+	header p {
+		color: #bbb;
+	}
+
+/* Table */
+
+	.table-wrapper {
+		-webkit-overflow-scrolling: touch;
+		overflow-x: auto;
+	}
+
+	table {
+		margin: 0 0 2rem 0;
+		width: 100%;
+	}
+
+		table tbody tr {
+			border: solid 1px;
+			border-left: 0;
+			border-right: 0;
+		}
+
+		table td {
+			padding: 0.75rem 0.75rem;
+		}
+
+		table th {
+			font
