@@ -2707,4 +2707,26 @@
 
 			.wrapper.style1 code {
 				background: rgba(255, 255, 255, 0.075);
-				b
+				border-color: rgba(255, 255, 255, 0.25);
+			}
+
+			.wrapper.style1 hr {
+				border-bottom-color: rgba(255, 255, 255, 0.25);
+			}
+
+			.wrapper.style1 .box {
+				border-color: rgba(255, 255, 255, 0.25);
+			}
+
+			.wrapper.style1 input[type="submit"],
+			.wrapper.style1 input[type="reset"],
+			.wrapper.style1 input[type="button"],
+			.wrapper.style1 button,
+			.wrapper.style1 .button {
+				background-color: #f2f2f2;
+				color: #000 !important;
+			}
+
+				.wrapper.style1 input[type="submit"]:hover,
+				.wrapper.style1 input[type="reset"]:hover,
+				.wrapper.style1 input[type="button"]
