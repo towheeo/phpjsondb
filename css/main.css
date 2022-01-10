@@ -2749,4 +2749,21 @@
 				.wrapper.style1 button.alt,
 				.wrapper.style1 .button.alt {
 					background-color: transparent;
-					box-shadow: inset 0 0 0 
+					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+					color: #ffffff !important;
+				}
+
+					.wrapper.style1 input[type="submit"].alt:hover,
+					.wrapper.style1 input[type="reset"].alt:hover,
+					.wrapper.style1 input[type="button"].alt:hover,
+					.wrapper.style1 button.alt:hover,
+					.wrapper.style1 .button.alt:hover {
+						background-color: rgba(255, 255, 255, 0.075);
+					}
+
+					.wrapper.style1 input[type="submit"].alt:active,
+					.wrapper.style1 input[type="reset"].alt:active,
+					.wrapper.style1 input[type="button"].alt:active,
+					.wrapper.style1 button.alt:active,
+					.wrapper.style1 .button.alt:active {
+						background-color: rgba(255, 
