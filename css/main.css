@@ -2766,4 +2766,20 @@
 					.wrapper.style1 input[type="button"].alt:active,
 					.wrapper.style1 button.alt:active,
 					.wrapper.style1 .button.alt:active {
-						background-color: rgba(255, 
+						background-color: rgba(255, 255, 255, 0.2);
+					}
+
+					.wrapper.style1 input[type="submit"].alt.icon:before,
+					.wrapper.style1 input[type="reset"].alt.icon:before,
+					.wrapper.style1 input[type="button"].alt.icon:before,
+					.wrapper.style1 button.alt.icon:before,
+					.wrapper.style1 .button.alt.icon:before {
+						color: #d0b5cc;
+					}
+
+				.wrapper.style1 input[type="submit"].special,
+				.wrapper.style1 input[type="reset"].special,
+				.wrapper.style1 input[type="button"].special,
+				.wrapper.style1 button.special,
+				.wrapper.style1 .button.special {
+					backgrou
