@@ -2823,4 +2823,29 @@
 					border-color: rgba(255, 255, 255, 0.25);
 				}
 
-			.wrapper.style1 input[type="checkbox"]:checked + label:b
+			.wrapper.style1 input[type="checkbox"]:checked + label:before,
+			.wrapper.style1 input[type="radio"]:checked + label:before {
+				background-color: #ffffff;
+				border-color: #ffffff;
+				color: #8a4680;
+			}
+
+			.wrapper.style1 input[type="checkbox"]:focus + label:before,
+			.wrapper.style1 input[type="radio"]:focus + label:before {
+				border-color: #ffffff;
+				box-shadow: 0 0 0 1px #ffffff;
+			}
+
+			.wrapper.style1 ::-webkit-input-placeholder {
+				color: #d0b5cc !important;
+			}
+
+			.wrapper.style1 :-moz-placeholder {
+				color: #d0b5cc !important;
+			}
+
+			.wrapper.style1 ::-moz-placeholder {
+				color: #d0b5cc !important;
+			}
+
+			.wrapper.s
