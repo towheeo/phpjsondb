@@ -3001,4 +3001,25 @@
 			.wrapper.style2 input[type="text"],
 			.wrapper.style2 input[type="password"],
 			.wrapper.style2 input[type="email"],
-			.wrapper.style2 se
+			.wrapper.style2 select,
+			.wrapper.style2 textarea {
+				background: rgba(0, 0, 0, 0.075);
+				border-color: rgba(0, 0, 0, 0.15);
+			}
+
+				.wrapper.style2 input[type="text"]:focus,
+				.wrapper.style2 input[type="password"]:focus,
+				.wrapper.style2 input[type="email"]:focus,
+				.wrapper.style2 select:focus,
+				.wrapper.style2 textarea:focus {
+					border-color: #8a4680;
+					box-shadow: 0 0 0 1px #8a4680;
+				}
+
+			.wrapper.style2 .select-wrapper:before {
+				color: rgba(0, 0, 0, 0.15);
+			}
+
+			.wrapper.style2 input[type="checkbox"] + label,
+			.wrapper.style2 input[type="radio"] + label {
+			
