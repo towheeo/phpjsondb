@@ -3151,4 +3151,23 @@
 				.wrapper.style3 input[type="submit"]:hover,
 				.wrapper.style3 input[type="reset"]:hover,
 				.wrapper.style3 input[type="button"]:hover,
-				.wrapp
+				.wrapper.style3 button:hover,
+				.wrapper.style3 .button:hover {
+					background-color: white;
+				}
+
+				.wrapper.style3 input[type="submit"]:active,
+				.wrapper.style3 input[type="reset"]:active,
+				.wrapper.style3 input[type="button"]:active,
+				.wrapper.style3 button:active,
+				.wrapper.style3 .button:active {
+					background-color: #e5e5e5;
+				}
+
+				.wrapper.style3 input[type="submit"].alt,
+				.wrapper.style3 input[type="reset"].alt,
+				.wrapper.style3 input[type="button"].alt,
+				.wrapper.style3 button.alt,
+				.wrapper.style3 .button.alt {
+					background-color: transparent;
+					box-
