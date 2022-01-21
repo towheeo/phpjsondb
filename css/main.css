@@ -3170,4 +3170,20 @@
 				.wrapper.style3 button.alt,
 				.wrapper.style3 .button.alt {
 					background-color: transparent;
-					box-
+					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+					color: #ffffff !important;
+				}
+
+					.wrapper.style3 input[type="submit"].alt:hover,
+					.wrapper.style3 input[type="reset"].alt:hover,
+					.wrapper.style3 input[type="button"].alt:hover,
+					.wrapper.style3 button.alt:hover,
+					.wrapper.style3 .button.alt:hover {
+						background-color: rgba(255, 255, 255, 0.075);
+					}
+
+					.wrapper.style3 input[type="submit"].alt:active,
+					.wrapper.style3 input[type="reset"].alt:active,
+					.wrapper.style3 input[type="button"].alt:active,
+					.wrapper.style3 button.alt:active,
+					.wr
