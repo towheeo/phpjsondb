@@ -3262,4 +3262,29 @@
 
 			.wrapper.style3 input[type="checkbox"]:checked + label:before,
 			.wrapper.style3 input[type="radio"]:checked + label:before {
-				backgr
+				background-color: #8a4680;
+				border-color: #8a4680;
+				color: #ffffff;
+			}
+
+			.wrapper.style3 input[type="checkbox"]:focus + label:before,
+			.wrapper.style3 input[type="radio"]:focus + label:before {
+				border-color: #8a4680;
+				box-shadow: 0 0 0 1px #8a4680;
+			}
+
+			.wrapper.style3 ::-webkit-input-placeholder {
+				color: #999999 !important;
+			}
+
+			.wrapper.style3 :-moz-placeholder {
+				color: #999999 !important;
+			}
+
+			.wrapper.style3 ::-moz-placeholder {
+				color: #999999 !important;
+			}
+
+			.wrapper.style3 :-ms-input-placeholder {
+				color: #999999 !important;
+			}
