@@ -3242,4 +3242,24 @@
 				.wrapper.style3 select:focus,
 				.wrapper.style3 textarea:focus {
 					border-color: #8a4680;
-					box-s
+					box-shadow: 0 0 0 1px #8a4680;
+				}
+
+			.wrapper.style3 .select-wrapper:before {
+				color: rgba(255, 255, 255, 0.25);
+			}
+
+			.wrapper.style3 input[type="checkbox"] + label,
+			.wrapper.style3 input[type="radio"] + label {
+				color: #bfbfbf;
+			}
+
+				.wrapper.style3 input[type="checkbox"] + label:before,
+				.wrapper.style3 input[type="radio"] + label:before {
+					background: rgba(255, 255, 255, 0.075);
+					border-color: rgba(255, 255, 255, 0.25);
+				}
+
+			.wrapper.style3 input[type="checkbox"]:checked + label:before,
+			.wrapper.style3 input[type="radio"]:checked + label:before {
+				backgr
