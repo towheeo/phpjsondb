@@ -3288,3 +3288,34 @@
 			.wrapper.style3 :-ms-input-placeholder {
 				color: #999999 !important;
 			}
+
+			.wrapper.style3 .formerize-placeholder {
+				color: #999999 !important;
+			}
+
+			.wrapper.style3 ul.alt li {
+				border-top-color: rgba(255, 255, 255, 0.25);
+			}
+
+			.wrapper.style3 header p {
+				color: #999999;
+			}
+
+			.wrapper.style3 table tbody tr {
+				border-color: rgba(255, 255, 255, 0.25);
+			}
+
+				.wrapper.style3 table tbody tr:nth-child(2n + 1) {
+					background-color: rgba(255, 255, 255, 0.075);
+				}
+
+			.wrapper.style3 table th {
+				color: #ffffff;
+			}
+
+			.wrapper.style3 table thead {
+				border-bottom-color: rgba(255, 255, 255, 0.25);
+			}
+
+			.wrapper.style3 table tfoot {
+				
