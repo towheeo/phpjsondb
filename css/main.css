@@ -3372,4 +3372,45 @@
 				z-index: 1;
 			}
 
-		@media screen and (max-
+		@media screen and (max-width: 1280px) {
+
+			.wrapper > .inner {
+				width: 75rem;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.wrapper > .inner {
+				width: 90%;
+			}
+
+			.wrapper.style3 {
+				background-attachment: scroll;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.wrapper {
+				padding: 3rem 0 1rem 0 ;
+			}
+
+		}
+
+/* Flexgrid */
+
+	.grid-style {
+		width: 100%;
+		margin: 0 0 2.5rem 0;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-align-items: s
