@@ -3484,4 +3484,36 @@
 			}
 
 			.grid-style > :nth-child(2n + 1) {
-	
+				padding-left: 1rem;
+			}
+
+			.grid-style > :nth-child(2n) {
+				padding-right: 1rem;
+			}
+
+			.grid-style > :nth-child(2n + 1),
+			.grid-style > :nth-child(2n) {
+				padding: 1rem;
+				width: calc(100% + 2rem);
+			}
+
+			.grid-style > * {
+				padding: 1rem;
+				width: calc(100% + 2rem);
+			}
+
+			.grid-style > :nth-child(-n + 1) {
+				padding-top: 0;
+			}
+
+			.grid-style > :nth-last-child(-n + 1) {
+				padding-bottom: 0;
+			}
+
+			.grid-style > :nth-child(1n + 1) {
+				padding-left: 0;
+			}
+
+			.grid-style > :nth-child(1n) {
+				padding-right: 0;
+			}
