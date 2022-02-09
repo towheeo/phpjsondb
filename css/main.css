@@ -3545,4 +3545,45 @@
 		.gallery > * {
 			-moz-flex-shrink: 1;
 			-webkit-flex-shrink: 1;
-			-ms-flex-
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			-moz-flex-grow: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-grow: 0;
+			flex-grow: 0;
+		}
+
+		.gallery > * {
+			width: 50%;
+		}
+
+		.gallery > * {
+			padding: 2rem;
+			width: calc(50% + 2rem);
+		}
+
+		.gallery > :nth-child(-n + 2) {
+			padding-top: 0;
+		}
+
+		.gallery > :nth-last-child(-n + 2) {
+			padding-bottom: 0;
+		}
+
+		.gallery > :nth-child(2n + 1) {
+			padding-left: 0;
+		}
+
+		.gallery > :nth-child(2n) {
+			padding-right: 0;
+		}
+
+		.gallery > :nth-child(2n + 1),
+		.gallery > :nth-child(2n) {
+			width: calc(50% + 0rem);
+		}
+
+		.gallery .image {
+			background: #FFF;
+			padding: 1rem;
+		}
