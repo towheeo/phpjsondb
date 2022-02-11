@@ -3587,3 +3587,39 @@
 			background: #FFF;
 			padding: 1rem;
 		}
+
+			.gallery .image.fit {
+				margin: 0;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			.gallery > * {
+				width: 100%;
+			}
+
+			.gallery > * {
+				padding: 1rem;
+				width: calc(50% + 1rem);
+			}
+
+			.gallery > :nth-child(-n + 2) {
+				padding-top: 1rem;
+			}
+
+			.gallery > :nth-last-child(-n + 2) {
+				padding-bottom: 1rem;
+			}
+
+			.gallery > :nth-child(2n + 1) {
+				padding-left: 1rem;
+			}
+
+			.gallery > :nth-child(2n) {
+				padding-right: 1rem;
+			}
+
+			.gallery > :nth-child(2n + 1),
+			.gallery > :nth-child(2n) {
+				padding: 1rem;
+				width: calc(10
