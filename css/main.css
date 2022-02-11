@@ -3622,4 +3622,48 @@
 			.gallery > :nth-child(2n + 1),
 			.gallery > :nth-child(2n) {
 				padding: 1rem;
-				width: calc(10
+				width: calc(100% + 2rem);
+			}
+
+			.gallery > * {
+				padding: 1rem;
+				width: calc(100% + 2rem);
+			}
+
+			.gallery > :nth-child(-n + 1) {
+				padding-top: 0;
+			}
+
+			.gallery > :nth-last-child(-n + 1) {
+				padding-bottom: 0;
+			}
+
+			.gallery > :nth-child(1n + 1) {
+				padding-left: 0;
+			}
+
+			.gallery > :nth-child(1n) {
+				padding-right: 0;
+			}
+
+			.gallery > :nth-child(1n + 1),
+			.gallery > :nth-child(1n) {
+				width: calc(100% + 1rem);
+			}
+
+		}
+
+/* Header */
+
+	body.subpage {
+		padding-top: 3.25em;
+	}
+
+	@-moz-keyframes reveal-header {
+		0% {
+			top: -4em;
+			opacity: 0;
+		}
+
+		100% {
+			to
