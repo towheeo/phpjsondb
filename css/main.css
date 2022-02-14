@@ -3777,4 +3777,39 @@
 					font-style: normal;
 					font-weight: normal;
 					text-transform: none !important;
-				
+				}
+
+				#header > a[href="#menu"]:before {
+					margin: 0 0.5em 0 0;
+				}
+
+			#header > a + a[href="#menu"]:last-child {
+				border-left: solid 1px rgba(0, 0, 0, 0.15);
+				padding-left: 1.25em;
+				margin-left: 0.5em;
+			}
+
+			#header > a:last-child {
+				padding-right: 1.25em;
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#header > a {
+					padding: 0 0.5em;
+				}
+
+					#header > a + a[href="#menu"]:last-child {
+						padding-left: 1em;
+						margin-left: 0.25em;
+					}
+
+					#header > a:last-child {
+						padding-right: 1em;
+					}
+
+			}
+
+		#header.reveal {
+			-moz-animation: reveal-header 0.5s ease;
+			-webkit-anima
