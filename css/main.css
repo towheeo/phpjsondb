@@ -3876,4 +3876,37 @@
 		-moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-		transition: transform 0.5s ease, box-shadow 0.
+		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+		-webkit-overflow-scrolling: touch;
+		background: rgba(0, 0, 0, 0.95);
+		box-shadow: none;
+		color: #000;
+		height: 100%;
+		max-width: 80%;
+		overflow-y: auto;
+		padding: 3rem 2rem;
+		position: fixed;
+		right: 0;
+		top: 0;
+		visibility: hidden;
+		width: 20rem;
+		z-index: 10002;
+	}
+
+		#menu > ul {
+			margin: 0 0 1rem 0;
+		}
+
+			#menu > ul.links {
+				list-style: none;
+				padding: 0;
+			}
+
+				#menu > ul.links > li {
+					padding: 0;
+				}
+
+					#menu > ul.links > li > a:not(.button) {
+						border: 0;
+						border-top: solid 1px rgba(255, 255, 255, 0.125);
+						color: rgba(255, 255, 2
