@@ -3812,4 +3812,41 @@
 
 		#header.reveal {
 			-moz-animation: reveal-header 0.5s ease;
-			-webkit-anima
+			-webkit-animation: reveal-header 0.5s ease;
+			-ms-animation: reveal-header 0.5s ease;
+			animation: reveal-header 0.5s ease;
+		}
+
+		#header.alt {
+			-moz-animation: none;
+			-webkit-animation: none;
+			-ms-animation: none;
+			animation: none;
+			background-color: transparent;
+			box-shadow: none;
+			overflow: hidden;
+			position: absolute;
+			top: 1.5em;
+		}
+
+			#header.alt h1 {
+				left: 2.5em;
+			}
+
+			#header.alt nav {
+				right: 2.5em;
+			}
+
+	@media screen and (max-width: 980px) {
+
+		body.subpage {
+			padding-top: 44px;
+		}
+
+		#header {
+			height: 44px;
+			line-height: 44px;
+		}
+
+			#header > h1 {
+				left:
