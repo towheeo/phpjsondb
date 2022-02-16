@@ -3849,4 +3849,31 @@
 		}
 
 			#header > h1 {
-				left:
+				left: 1em;
+			}
+
+				#header > h1 a {
+					font-size: 1em;
+				}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#header {
+			min-width: 320px;
+		}
+
+	}
+
+/* Menu */
+
+	#menu {
+		-moz-transform: translateX(20rem);
+		-webkit-transform: translateX(20rem);
+		-ms-transform: translateX(20rem);
+		transform: translateX(20rem);
+		-moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+		-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+		transition: transform 0.5s ease, box-shadow 0.
