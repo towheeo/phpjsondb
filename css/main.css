@@ -3909,4 +3909,29 @@
 					#menu > ul.links > li > a:not(.button) {
 						border: 0;
 						border-top: solid 1px rgba(255, 255, 255, 0.125);
-						color: rgba(255, 255, 2
+						color: rgba(255, 255, 255, 0.5);
+						display: block;
+						line-height: 3.5rem;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+
+						#menu > ul.links > li > a:not(.button):hover {
+							color: #FFF;
+						}
+
+					#menu > ul.links > li > .button {
+						display: block;
+						margin: 0.5rem 0 0 0;
+					}
+
+					#menu > ul.links > li:first-child > a:not(.button) {
+						border-top: 0 !important;
+					}
+
+		#menu .close {
+			text-decoration: none;
+			-moz-transition: color 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out;
+			transition: color 0.2s eas
