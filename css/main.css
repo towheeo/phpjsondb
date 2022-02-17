@@ -3998,4 +3998,40 @@
 /* Banner */
 
 	.banner {
-		backgr
+		background-color: #8a4680;
+		color: #e2d1df;
+		padding: 8em 0;
+		position: relative;
+	}
+
+		.banner input, .banner select, .banner textarea {
+			color: #ffffff;
+		}
+
+		.banner a {
+			color: #ffffff;
+		}
+
+		.banner strong, .banner b {
+			color: #ffffff;
+		}
+
+		.banner h1, .banner h2, .banner h3, .banner h4, .banner h5, .banner h6 {
+			color: #ffffff;
+		}
+
+		.banner blockquote {
+			border-left-color: rgba(255, 255, 255, 0.25);
+		}
+
+		.banner code {
+			background: rgba(255, 255, 255, 0.075);
+			border-color: rgba(255, 255, 255, 0.25);
+		}
+
+		.banner hr {
+			border-bottom-color: rgba(255, 255, 255, 0.25);
+		}
+
+		.banner.full {
+			p
