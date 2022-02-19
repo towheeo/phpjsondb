@@ -4059,4 +4059,37 @@
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			visibility: hidden;
+			width: 100%;
+			z-index: 2;
+		}
+
+		.banner .indicators {
+			bottom: 1.5em;
+			left: 0;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			z-index: 2;
+		}
+
+			.banner .indicators li {
+				cursor: pointer;
+				display: inline-block;
+				height: 2em;
+				overflow: hidden;
+				padding: 0;
+				position: relative;
+				text-indent: 2em;
+				width: 2em;
+			}
+
+				.banner .indicators li:before {
+					background: rgba(255, 255, 255, 0.35);
+					border
