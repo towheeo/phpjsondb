@@ -4092,4 +4092,26 @@
 
 				.banner .indicators li:before {
 					background: rgba(255, 255, 255, 0.35);
-					border
+					border-radius: 100%;
+					content: '';
+					display: inline-block;
+					height: 0.8em;
+					left: 50%;
+					margin: -0.4em 0 0 -0.4em;
+					position: absolute;
+					text-indent: 0;
+					top: 50%;
+					width: 0.8em;
+				}
+
+				.banner .indicators li.visible:before {
+					background: #fff;
+				}
+
+		.banner > article {
+			-moz-transition: opacity 1.5s ease, visibility 1.5s;
+			-webkit-transition: opacity 1.5s ease, visibility 1.5s;
+			-ms-transition: opacity 1.5s ease, visibility 1.5s;
+			transition: opacity 1.5s ease, visibility 1.5s;
+			background-attachment: fixed;
+			background-position: center;
