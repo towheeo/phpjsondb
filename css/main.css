@@ -4252,4 +4252,50 @@
 			}
 
 			.banner > article p {
-				
+				margin-bottom: 1rem;
+			}
+
+			.banner > article h2 {
+				font-size: 4em;
+			}
+
+		}
+
+		body.is-mobile .banner > article {
+			background-attachment: scroll;
+		}
+
+/* Main */
+
+	#main {
+		padding: 4rem 0 2rem 0 ;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			#main {
+				padding: 3rem 0 1rem 0 ;
+			}
+
+		}
+
+/* Footer */
+
+	#footer {
+		padding: 4rem 0 2rem 0 ;
+		background: #000;
+		text-align: center;
+	}
+
+		#footer a {
+			color: rgba(255, 255, 255, 0.5);
+		}
+
+			#footer a:hover {
+				color: #FFF;
+			}
+
+		#footer .copyright {
+			color: #bbb;
+			font-size: 0.9rem;
+			margin: 0 0 2r
