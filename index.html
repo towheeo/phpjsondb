@@ -1,0 +1,208 @@
+
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<title>Indieheads RVRB</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/fullcalendar.css" />
+		<link rel="icon" type="image/png" href="images/cowboyFavicon.png" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">INDIEHEADS<span>RVRB</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a id="homeLink">Home</a></li>
+					<li><a id="calendarLink">Listening Party Schedule</a></li>
+					<li><a id="contactLink" href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="images/slide01.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<a href="https://app.rvrb.one/channel/635221b5e5d3637cd576c1b2" class="image fit">
+								<img src="images/indieheads.png" alt="" class="headerimage" />
+							</a>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/slide02.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<h2>RVRB IS</h2>
+							<span class="image fit"><img src="images/cowboy.png" alt="" class="headerimage" /></span>
+							<a href="httsp://rvrb.one/" target="_blank" class="button alt">Discover new music</a>
+						</header>
+					</div>
+				</article>
+			</section>
+
+			<section id="aboutUs" class="wrapper style4">
+				<div class="inner">
+					<div class="box align-center">
+						<h3 class="aboutHeader">About Us</h3>
+						<p class="aboutText">
+						The r/<span class="bruceifyNoSpace">indie</span>heads RVRB room is an unofficial room for <a href="https://www.reddit.com/r/indieheads/" target="_blank">r/<span class="bruceifyNoSpace">indie</span>heads</a> users (or anyone cool, for that matter!) to listen to and discuss <span class="bruceify">music</span> together! <span class="bruceify">Indie music</span> is the common ground for our users, but everyone should feel free to share whatever music they love - you'll never be berated for playing something "not <span class="bruceify">indie</span> enough" because, after all, what truly <em>is</em> <span class="bruceify">indie music</span>, anyway? We hope to see you hanging out in the room soon - feel free to ask us any questions you have about our room or <span class="bruceify">RVRB</span> in general when you get there or reach out to us via our <a href="contact.html">contact page</a>!
+						</p>
+					</div>
+				</div>
+			</section>
+
+		<!-- Top section widgets (last fm now playing + last fm top artists) -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<!-- LastFm Now Playing Widget -->
+						<div>
+							<div class="box">
+								<div class="image fit" id="lastFmNowPlayingDiv">
+									<script type="text/template" id="lastFmWidget">
+										<img src="{ track.image.extralarge }">
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<a href="https://www.last.fm/user/lastdotfmbot" target="_blank"><h2>Now Playing</h2></a>
+									</header>
+										<p class="align-center"><b>{ track.title }</b></br>
+										{ track.artist }</br>
+										<i>{ track.album }</i>
+										</p>
+									<footer class="align-center" style="padding-top: 20px; margin-top:-2rem;">
+										<a href="https://app.rvrb.one/channel/635221b5e5d3637cd576c1b2" class="button alt">Listen Now</a>
+									</footer>
+									</script>
+								</div>
+							</div>
+						</div>
+
+						<!-- LastFm Top Artists Widget -->
+						<div>
+							<div class="box">
+								<div class="content">
+									<header class="align-center">
+										<h2>Our Top Artists</h2>
+									</header>
+									<div id="topArtists"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Listening party calendar widget -->
+			<section id="two">
+				<div class="inner" id="calendarSection">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Weekly Listening Party Schedule</h2>
+								<p class="smallSubHeader">***times listed are EST***</p>
+							<div id='loading'>loading...</div>
+							<div id='calendar'></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://www.reddit.com/r/indieheads/" class="icon fa-reddit"><span class="label">Twitter</span></a></li>
+						<li><a href="https://twitter.com/indie_heads?lang=en" class="icon fa-twitter"><span class="label">Facebook</span></a></li>
+						<li><a href="mailto:indieheadsjqbx@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; INDIEHEADS RVRB. All rights reserved.
+				</div>
+			</footer>
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+
+		<!-- Custom scripts - currently playing and top artists -->
+			<script src="js/jquery.lastfmnowplaying.js"></script>
+			<script src="js/lastFmTopArtists.js"></script>
+
+		<!-- Google Cal scripts -->
+			<script src='js/moment.min.js'></script>
+			<script src='js/fullcalendar.min.js'></script>
+			<script src='js/gcal.min.js'></script>
+
+		<!-- Load custom widgets -->
+		<script>
+			$(document).ready(function() {
+
+				/* load now playing widget */
+				$('#lastFmWidget').lastfmNowPlaying({
+					apiKey: 'd934cbc98c1d7e09f4e85f62786c365b',
+					members: ['LASTdotFMbot'],
+					refreshPeriod: 15000 /* auto-refresh every 15 seconds */
+				});
+				
+				/* load top artists widget */
+				var topArtists = new TopArtists("LASTdotFMbot", "d934cbc98c1d7e09f4e85f62786c365b", "#topArtists", "large", undefined, 25);
+				topArtists.load();
+
+				/* load google calendar widget */
+				$('#calendar').fullCalendar({
+					header: {
+					left: "prev,next today",
+					center: "title",
+					right: "listMonth,month"
+					},
+					displayEventTime: true, // show the time column in list view
+					googleCalendarApiKey: "AIzaSyBor-xf8G4p0IZAjN_D7n2VwfFC2UHJWWY",
+					// Listening Parties
+					events: "indieheadsjqbx@gmail.com",
+					eventClick: function(event) { 
+						// opens events in a popup window
+						window.open(event.url, "gcalevent", "width=700,height=600");
+						return false;
+					},
+					loading: function(bool) {
+						$("#loading").toggle(bool);
+					}	
+				});	
+
+
+				/* add smooth scrolling for menu links */
+				$("#homeLink").click(function(event) {
+					$("html, body").animate({
+						scrollTop: 0
+					},	800);
+					$("#menu").removeClass("visible");
+				});
+				$("#calendarLink").click(function(event) {
+					$("html, body").animate({
+						scrollTop: $("#calendarSection").offset().top
+					}, 800);
+					$("#menu").removeClass("visible");
+				});
