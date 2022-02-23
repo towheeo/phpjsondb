@@ -4346,4 +4346,21 @@
 }
 
 .box header p.smallSubHeader {
-	te
+	text-transform: none;
+	margin: -1rem 0 1.5rem 0;
+	letter-spacing: .1rem;
+	font-weight: bold;
+}
+
+.box header p.smallSubHeader:after {
+	height: 0;
+}
+
+.aboutHeader {
+	font-family: cursive;
+	text-decoration: underline;
+}
+
+#aboutUs {
+	padding: 2rem 0 1rem 0;
+}
