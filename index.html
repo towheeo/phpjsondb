@@ -206,3 +206,22 @@
 					}, 800);
 					$("#menu").removeClass("visible");
 				});
+
+				$(".aboutHeader").click(function() {
+					$(".bruceify").text("Bruce Willis");
+					$(".bruceifyNoSpace").text("brucewillis");
+				});
+			});
+			
+		$(document).ajaxStop(function() {
+			$(this).unbind("ajaxStop");
+			
+			if(window.location.hash === "#cal") {
+				$("html, body").animate({
+					scrollTop: $("#calendarSection").offset().top
+				},	800);
+			}
+		});
+		</script>
+	</body>
+</html>
