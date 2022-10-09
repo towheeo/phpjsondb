@@ -12,4 +12,41 @@
 	var pluginName = 'lastfmNowPlaying';
 	var defaults = {};
 
-	function Plugin
+	function Plugin( element, options ) {
+
+		this.element = element;
+		this.options = $.extend( {}, defaults, options) ;
+		this._defaults = defaults;
+		this._name = pluginName;
+		this.filteredResults = [];
+		this.init();
+		if(options.refreshPeriod) {
+			setInterval(
+				(function(self) {
+					return function() {
+						self.init();
+					}
+				})(this), options.refreshPeriod);
+		}
+	}
+
+	/**
+	 * Init Plugin
+	 */
+
+	Plugin.prototype.init = function () {
+
+		this.getData();
+		this.sortData();
+
+	};
+
+	/**
+	 * Get Data
+	 */
+
+	Plugin.prototype.getData = function () {
+
+		var self = this;
+
+		$(
