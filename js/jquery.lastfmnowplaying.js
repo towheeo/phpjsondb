@@ -107,4 +107,32 @@
 			
 			// Custom algorithm for sort() method
 			function sortbyNewest ( a, b ) {
-				return new Date( parseInt( a.date.uts, 10 ) ).getTime() - new 
+				return new Date( parseInt( a.date.uts, 10 ) ).getTime() - new Date( parseInt( b.date.uts, 10 ) ).getTime();
+			}
+
+			// Sort tracks from oldest to newest
+			self.filteredResults = self.filteredResults.sort( sortbyNewest );
+
+			// Return only the newest track
+			self.filteredResult = self.filteredResults[ self.filteredResults.length - 1 ];
+
+			// Render Template
+			self.renderTemplate( self.prepareTemplateData() );
+
+		});
+
+	};
+
+	/**
+	 * Add Date Stamp
+	 */
+
+	Plugin.prototype.addDateStamp = function ( item ) {
+
+		item.date = {};
+		item.date.uts = Date.now().toString();
+
+	};
+
+	/**
+	 * Prep
