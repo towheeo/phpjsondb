@@ -76,4 +76,35 @@
 		var self = this;
 		self.filteredResults = [];
 		
-		$( dat
+		$( data ).each( function () {
+
+			// Check if track is now playing
+			var nowPlaying = $(this).attr('@attr');
+
+			// Add date stamp to track if now playing
+			if ( nowPlaying ) {
+				self.addDateStamp( this );
+			}
+
+			self.filteredResults.push( this );
+
+		});
+
+	};
+
+	/**
+	 * Sort Data
+	 */
+	
+	Plugin.prototype.sortData = function () {
+
+		var self = this;
+
+		// Perform sorting after we have all our data
+
+		$(document).ajaxStop( function() {
+			$(this).unbind("ajaxStop");
+			
+			// Custom algorithm for sort() method
+			function sortbyNewest ( a, b ) {
+				return new Date( parseInt( a.date.uts, 10 ) ).getTime() - new 
