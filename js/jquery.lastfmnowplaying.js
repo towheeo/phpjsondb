@@ -191,4 +191,20 @@
 						continue;
 					}
 
-					needle = '{ track.
+					needle = '{ track.image.' + property + ' }';
+					template = template.replace( needle, track.image[ property ] );
+
+				}
+
+			} else {
+
+				needle = '{ track.' + property + ' }';
+				template = template.replace( needle, track[ property ] );
+
+			}
+
+		}
+
+		/* bit of a hacky solution, could be improved with more options... but if we are refreshing the widget, wipe out the previously-generated template to replace it with the refreshed update. the hackiness is that the previously-generated template is just assumed to be the siblings of the <script> template... so that should be improved */
+		if(self.options.refreshPeriod) {
+			$("#" + se
