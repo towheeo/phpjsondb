@@ -165,4 +165,30 @@
 
 	Plugin.prototype.renderTemplate = function ( track ) {
 
-		// This is a 
+		// This is a bit dirty, but fine for purpose. If you know a nicer way, send a PR
+
+		var self = this;
+		var needle;
+		var property;
+
+		// Render template to HTML
+		var template = $(self.element).html();
+
+		// Iterate for properties in track
+		for ( property in track ) {
+
+			// Continue iteration if can has property
+			if ( !track.hasOwnProperty( property ) ) {
+				continue;
+			}
+
+			// If property is image
+			if ( property === 'image' ) {
+
+				for ( property in track.image ) {
+
+					if ( !track.image.hasOwnProperty( property ) ) {
+						continue;
+					}
+
+					needle = '{ track.
