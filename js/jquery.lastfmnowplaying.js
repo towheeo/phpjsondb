@@ -135,4 +135,34 @@
 	};
 
 	/**
-	 * Prep
+	 * Prepare Template Data
+	 */
+
+	Plugin.prototype.prepareTemplateData = function () {
+		
+		var self = this;
+		var results = self.filteredResult;
+
+
+		// Prepare Last.fm track data
+		return {
+			artist: results.artist['#text'],
+			album: results.album['#text'],
+			title: results.name,
+			image: {
+				small: results.image[0]['#text'],
+				medium: results.image[1]['#text'],
+				large: results.image[2]['#text'],
+				extralarge: results.image[3]['#text']
+			},
+			url: results.url
+		};
+	};
+
+	/**
+	 * Render Template
+	 */
+
+	Plugin.prototype.renderTemplate = function ( track ) {
+
+		// This is a 
