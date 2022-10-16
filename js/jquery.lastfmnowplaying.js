@@ -207,4 +207,43 @@
 
 		/* bit of a hacky solution, could be improved with more options... but if we are refreshing the widget, wipe out the previously-generated template to replace it with the refreshed update. the hackiness is that the previously-generated template is just assumed to be the siblings of the <script> template... so that should be improved */
 		if(self.options.refreshPeriod) {
-			$("#" + se
+			$("#" + self.element.id).siblings().remove();
+		}
+
+		// Add template to DOM
+		$( self.element ).after( template );
+
+		// Clean template
+		self.cleanTemplate();
+
+		if(track.artist === "Bruce Willis") {
+			Plugin.bruceParty();
+		}
+	};
+
+	/**
+	 * Clean Template
+	 */
+
+	Plugin.prototype.cleanTemplate = function () {
+
+		var self = this;
+		var images = $( self.element ).next().find('img');
+
+		images.each( function () {
+
+			var imageURL = $(this).attr('src');
+
+			if ( !imageURL.length ) {
+				$(this).remove();
+			}
+
+		});
+
+	};
+
+	/**
+	 * It is time to have a bruce party
+	 */
+	Plugin.bruceParty = function() {
+		var $images = $(docum
